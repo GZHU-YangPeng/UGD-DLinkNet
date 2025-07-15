@@ -112,7 +112,7 @@ def enable_dropout(model):
 def main():
 #The part of init
     now = datetime.now()
-    args.out = osp.join('../logs_0614/CHN6', here.split('/')[-1], now.strftime(osp.join(args.model_name,'S_%Y%m%d_%H%M%S.%f_{}'.format(args.teach))))
+    args.out = osp.join('./logs_0614/CHN6', here.split('/')[-1], now.strftime(osp.join(args.model_name,'S_%Y%m%d_%H%M%S.%f_{}'.format(args.teach))))
 
     os.makedirs(args.out)
     with open(osp.join(args.out, 'config.yaml'), 'w') as f:
