@@ -1,0 +1,1 @@
+What is stored here are logs and model parameters
