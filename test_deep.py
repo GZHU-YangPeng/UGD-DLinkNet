@@ -37,7 +37,7 @@ def enable_dropout(model):
 def main():
     #参数
     parser = argparse.ArgumentParser()
-    parser.add_argument('--model-file', type=str, default="../logs/DeepGlobe/ts_t_drop_cls/DLinkNet34/S_20250709_131704.494631_True/best.pth.tar",
+    parser.add_argument('--model-file', type=str, default="./logs/DeepGlobe/ts_t_drop_cls/DLinkNet34/S_20250709_131704.494631_True/best.pth.tar",
                         help='checkpoint path')
     parser.add_argument( '--gpus', type=list, default=[0])
     parser.add_argument(
@@ -48,7 +48,7 @@ def main():
     parser.add_argument(
         '--save-dir',
         type=str,
-        default='../logs/DeepGlobe/ts_t_drop_cls/DLinkNet34/S_20250709_131704.494631_True/results',
+        default='./logs/DeepGlobe/ts_t_drop_cls/DLinkNet34/S_20250709_131704.494631_True/results',
         help='path to save label',
     )
     parser.add_argument(
