@@ -5,9 +5,37 @@ The code will be released soon.
 
 ## Requirements：
 ```
-numpy >= 1.16.5
-PyTorch >= 1.3.1
-sklearn >= 0.20.4
-tqdm >= 4.46.1
-imageio >= 2.8.0
+PyTorch >= 2.0.0
+Python  3.8
+CUDA  11.8
 ```
+
+### Train
+
+**To train** model in different settings (locations, pairwise functions), please refer [here](https://github.com/yswang0522/NLLinkNetRoadExtraction/blob/master/run_example.sh).
+
+To train **UGD-DLinkNet**(Massachusetts road dataset):
+
+    python train_mass.py 
+
+To train **UGD-DLinkNet**(CHN6-CUG Road Dataset)
+
+    python train_chn6.py 
+
+To train **UGD-DLinkNet**  (DeepGlobe dataset ) 
+
+    python train_deep.py 
+
+### Predict
+
+**UGD-DLinkNet**(Massachusetts road dataset):
+
+    python test_mass.py 
+
+**UGD-DLinkNet**(CHN6-CUG Road Dataset)
+
+    python test_chn6.py 
+
+**UGD-DLinkNet**(DeepGlobe dataset ) 
+
+    python test_deep.py 
